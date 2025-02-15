@@ -17,8 +17,10 @@ struct CustomFooterButtonView: View {
             Image(systemName: imageName)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 24, height: 24)
+                .frame(width: 30, height: 30)
             Text(text)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
         }
     }
 }
