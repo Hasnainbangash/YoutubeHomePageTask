@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomFooterButtonView: View {
     
     var imageName: String
-    var imageText: String
+    var text: String
     
     var body: some View {
         VStack {
@@ -18,11 +18,11 @@ struct CustomFooterButtonView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 24, height: 24)
-            Text(imageText)
+            Text(text)
         }
     }
 }
 
 #Preview {
-    CustomFooterButtonView(imageName: "house", imageText: "Home")
+    CustomFooterButtonView(imageName: "house", text: "Home")
 }
