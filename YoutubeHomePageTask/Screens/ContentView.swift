@@ -9,19 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        // MARK: Header
-        
-        // MARK: Center
-        
-        // MARK: Footer
-        
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 0) {
+            // MARK: Header
+            HeaderView()
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
+            
+            // MARK: Body
+            List {
+                BodyView()
+                BodyView()
+            }
+            .listStyle(.plain)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
+            // MARK: Footer - Sticks to the bottom
+            FooterView()
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
         }
-        .padding()
     }
 }
 

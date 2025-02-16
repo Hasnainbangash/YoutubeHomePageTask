@@ -14,7 +14,7 @@ struct BodyView: View {
             Image("image1")
                 .resizable()
                 .scaledToFit()
-                .frame(width: .infinity, height: 300)
+                .frame(maxWidth: .infinity, maxHeight: 300)
                 .overlay(alignment: .bottomTrailing) {
                     Text("11:22")
                         .fontWeight(.medium)
