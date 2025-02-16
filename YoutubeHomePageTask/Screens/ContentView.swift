@@ -28,8 +28,8 @@ struct ContentView: View {
             
             // MARK: Footer - Sticks to the bottom
             FooterView()
-                .frame(maxWidth: .infinity)
-                .background(Color.white.opacity(0.4))
+                .frame(maxWidth: .infinity, maxHeight: 60)
+                .background(Color.white)
         }
     }
 }
