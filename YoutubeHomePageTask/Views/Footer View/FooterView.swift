@@ -34,7 +34,7 @@ struct FooterView: View {
             CustomFooterButtonView(imageName: "play.rectangle.on.rectangle", text: "Library")
                 .frame(maxWidth: .infinity)
         }
-        .padding(.horizontal)
+        .padding()
     }
 }
 

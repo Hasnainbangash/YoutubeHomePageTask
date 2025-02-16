@@ -49,7 +49,7 @@ struct BodyView: View {
             }
             .padding(.horizontal, 10)
         }
-        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
     }
 }
 
