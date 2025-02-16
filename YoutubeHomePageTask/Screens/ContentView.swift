@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+         
         VStack(spacing: 0) {
             // MARK: Header
             HeaderView()
@@ -17,11 +18,13 @@ struct ContentView: View {
             
             // MARK: Body
             List {
-                BodyView()
-                BodyView()
+                BodyView(videoImage: "image2", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
+                BodyView(videoImage: "image3", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
+                BodyView(videoImage: "image5", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
             }
             .listStyle(.plain)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .edgesIgnoringSafeArea(.horizontal)
             
             // MARK: Footer - Sticks to the bottom
             FooterView()

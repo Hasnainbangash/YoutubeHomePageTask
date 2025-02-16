@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct BodyView: View {
+    
+    let videoImage: String
+    let profileImage: String
+    let title: String
+    
     var body: some View {
         
         VStack(alignment: .leading) {
-            Image("image1")
+            Image(videoImage)
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: .infinity, maxHeight: 300)
@@ -26,14 +31,14 @@ struct BodyView: View {
                 }
             
             HStack(alignment: .top) {
-                Image("personImage")
+                Image(profileImage)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)
                     .clipShape(.circle)
                 
                 VStack(alignment: .leading) {
-                    Text("I Compared This Chotu Samsung S25 with S24!")
+                    Text(title)
                         .font(.system(size: 17, weight: .medium))
                     Text("TechBar • 48k views • 4 hours ago")
                         .foregroundColor(.secondary)
@@ -44,9 +49,11 @@ struct BodyView: View {
             }
             .padding(.horizontal, 10)
         }
+        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
     }
 }
 
 #Preview {
-    BodyView()
+    BodyView(videoImage: "image2", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
 }
+/// I Compared This Chotu Samsung S25 with S24!
