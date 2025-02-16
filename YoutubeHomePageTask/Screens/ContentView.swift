@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack(spacing: 0) {
             // MARK: Header
             HeaderView()
-                .frame(maxWidth: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: 60)
                 .background(Color.white)
             
             // MARK: Body
@@ -29,7 +29,7 @@ struct ContentView: View {
             // MARK: Footer - Sticks to the bottom
             FooterView()
                 .frame(maxWidth: .infinity)
-                .background(Color.white)
+                .background(Color.white.opacity(0.4))
         }
     }
 }
