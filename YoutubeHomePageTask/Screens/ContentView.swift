@@ -21,12 +21,14 @@ struct ContentView: View {
                 BodyView(videoImage: "image2", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
                 BodyView(videoImage: "image3", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
                 BodyView(videoImage: "image5", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
+                BodyView(videoImage: "image6", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
+                BodyView(videoImage: "image13", profileImage: "personImage", title: "I Compared This Chotu Samsung S25 with S24!")
             }
             .listStyle(.plain)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .edgesIgnoringSafeArea(.horizontal)
             
-            // MARK: Footer - Sticks to the bottom
+            // MARK: Footer
             FooterView()
                 .frame(maxWidth: .infinity, maxHeight: 60)
                 .background(Color.white)
